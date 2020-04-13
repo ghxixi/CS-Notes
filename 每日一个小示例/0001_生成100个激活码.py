@@ -1,5 +1,4 @@
 
-
 #------------------------------------
 
 #生成100个key，每个key长度为15位
@@ -21,7 +20,6 @@ def create_key(count,len):
     
     for j in range(count):
         return create_string(len)
-
 
 if __name__=="__main__":
     #创建100个key,每个key长度为15位
