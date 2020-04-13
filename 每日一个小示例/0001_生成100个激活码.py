@@ -17,10 +17,13 @@ def create_string(len):
     
 
 def create_key(count,len):
-    
+    import csv
+    file=open('d:/key_code.txt','w')
     for j in range(count):
-        return create_string(len)
+        file.write(create_string(len))
+    
+    file.close()
 
 if __name__=="__main__":
     #创建100个key,每个key长度为15位
-    print(create_key(100,15))
+    create_key(100,15)
