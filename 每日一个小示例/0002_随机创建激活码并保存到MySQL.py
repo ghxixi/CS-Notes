@@ -22,8 +22,8 @@ def create_string(len):
 
 if __name__=="__main__":
     #链接数据库
-    conn = psycopg2.connect(database="omstar_analysis_1585125952729", user="OMStar", password="Aa123456",
-                            host="127.0.0.1", port="15432")
+    conn = psycopg2.connect(database="my_databse", user="user", password="Aa123456",
+                            host="127.0.0.1", port="5432")
     # 创建指针对象
     cur = conn.cursor()
     # 创建100个key,每个key长度为15位
